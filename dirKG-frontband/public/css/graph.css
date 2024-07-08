@@ -1,0 +1,141 @@
+ /*之前在js代码里面定义了classes，这边就给这些写样式*/
+ .lines line {
+    stroke: rgb(240, 240, 240); /*线的颜色*/
+    stroke-opacity: 1;        /*线的透明度*/
+ }
+ .lines line.inactive {
+    /*display: none !important;*/
+    stroke-opacity: 0;
+ }
+ #arrow{
+    fill: white;
+ }
+
+ #arrow.inactive{
+    fill-opacity: 0;
+ }
+
+ .linetexts {
+    fill-opacity: 1;
+    font-size: 8px ;
+    font-family: SimSun;
+    fill:#fff;
+ }
+ .linetexts.inactive {
+    display: none !important;
+ }
+
+ .circles circle {
+    stroke: #fff;
+    stroke-width: 1.5px;        /*圆的描边宽度*/
+ }
+ .circles circle:hover {
+    cursor: pointer;
+ }
+ .circles circle.inactive {
+    display: none !important;
+ }
+
+ /*默认显示所有的圆圈，进入模式切换之后才会显示text*/
+ .texts text {
+    display: none;
+ }
+ .texts text:hover {
+    cursor: pointer;
+ }
+
+ .texts text.inactive {
+    display: none !important;
+ }
+
+
+ /* 实体输入框 */
+ #entityInput input {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 200px;
+    background-color: #666;
+ }
+
+ #entityInput h3 {
+    position: absolute;
+    top: 20px; /* 根据需要调整 */
+    left: 30px;
+    font-size: 18px ;
+    font-family: SimSun;
+    color:#fff;
+ }
+
+ /*mode-模式切换的style*/
+ #mode {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+ }
+
+ #mode span {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: color, background-color .3s; /*CSS3中的渐变*/
+    -o-transition: color, background-color .3s;
+    -ms-transition: color, background-color .3s;
+    -moz-transition: color, background-color .3s;
+    -webkit-transition: color, background-color .3s;
+ }
+
+ /*当按键处于激活状态的时候*/
+ #mode span.active {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+ }
+ /*当按键处于鼠标悬浮状态的时候*/
+ #mode span:hover {
+    background-color: #aaa;
+    color: #333;
+    cursor: pointer;
+ }
+
+ /*info的样式*/
+ #info {
+    position: absolute;
+    top: 0px;			/*10px*/
+    /*bottom: 40px;*/
+    right: 10px;   		/*20px*/
+    text-align: left;		/*right*/
+    width: 300px;  		/*255px*/
+ }
+
+ #info p {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+ }
+
+ #info p span {
+    color: #888;
+    margin-right: 0px;
+ }
+       /*搜索框的样式*/
+ #search input {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 200px;
+    background-color: #666;
+ }
+
