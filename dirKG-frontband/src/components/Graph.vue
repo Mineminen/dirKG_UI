@@ -33,6 +33,7 @@
             let circles, lines, texts, linetexts;
             let simulation;
             var dragging = false;
+            let color;
             // const nodeIndexSet = new Set(nodes.map(node => node.id));
             // const links = relationships.filter(link => nodeIndexSet.has(link.source) && nodeIndexSet.has(link.target));
             
@@ -337,6 +338,4 @@
 </template>
 
 <style scoped>
-/* 引入css/graph.css样式 */
-@import "../../public/css/graph.css"
 </style>

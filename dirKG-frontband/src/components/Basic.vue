@@ -72,6 +72,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* 引入 css/graph.css 的样式 */
-@import "../../public/css/graph.css";
+
 </style>
