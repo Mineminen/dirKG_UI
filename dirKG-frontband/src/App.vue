@@ -8,9 +8,9 @@ import Basic from './components/Basic.vue';
 
     <Basic></Basic>
 
-     <hr>
-      默认展示位置:<router-view></router-view>
-     <hr>
+    <hr class="hidden">
+    默认展示位置:<router-view></router-view>
+    <hr class="hidden">
 
     </div>
 

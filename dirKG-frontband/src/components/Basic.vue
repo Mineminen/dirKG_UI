@@ -66,8 +66,7 @@ onMounted(() => {
       <input type="text" autocomplete="off" class="form-control" ref="searchInput">
     </div>
 
-    <svg width="1080" height="700" id="svg1" class="svgs"
-         style="display: block; margin: 0 auto; border: 1px solid transparent;"></svg>
+    
   </div>
 </template>
 
